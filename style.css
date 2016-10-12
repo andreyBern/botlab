@@ -1,0 +1,393 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?5ysswg');
+  src:  url('fonts/icomoon.eot?5ysswg#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?5ysswg') format('truetype'),
+    url('fonts/icomoon.woff?5ysswg') format('woff'),
+    url('fonts/icomoon.svg?5ysswg#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-envelope:before {
+  content: "\e906";
+}
+.icon-chat-3:before {
+  content: "\e907";
+}
+.icon-heart:before {
+  content: "\e908";
+}
+.icon-users:before {
+  content: "\e909";
+}
+.icon-phone-landscape:before {
+  content: "\e90a";
+}
+.icon-tablet:before {
+  content: "\e90b";
+}
+.icon-diamond:before {
+  content: "\e90c";
+}
+.icon-cloud:before {
+  content: "\e900";
+}
+.icon-bubble:before {
+  content: "\e901";
+}
+.icon-phone:before {
+  content: "\e902";
+}
+.icon-like:before {
+  content: "\e905";
+}
+.icon-wallet:before {
+  content: "\e903";
+}
+.icon-world:before {
+  content: "\e904";
+}
+
+/* --------------- reset.css --------------- */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, em, img, strong, sub, sup, b, u, i,  dl, dt, dd, ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;                               /* обнуляем отступы и убираем бордюры */
+	vertical-align: baseline;          /* приводим все к одной базовой линии */
+	background: transparent;      /* чтобы не проскакивали левые фоны, установленные по умолчанию */
+	font-size: 100%;                     /* размер шрифта всем одинаковый */
+}
+a {                                      	     /* ссылка не в общем списке чтобы не сбрасывать outline по умолчанию */
+	margin:0;
+	padding:0;
+	font-size:100%;
+	vertical-align:baseline;
+	background:transparent;
+	outline:none;
+}
+table {						/* устраняем отступы между ячейками таблицы */
+	border-collapse: collapse; 
+	border-spacing: 0;
+}
+td, td img {
+	vertical-align: top;			/* возвращаем привычное вертикальное выравнивание */
+} 
+input, select, button, textarea {
+	margin: 0; 				/* убираем отступы по умолчанию для элементов форм (в частности для checkbox и radio) */
+	font-size: 100%; 			/* делаем размер шрифтов везде одинаковым */
+	outline: none;
+}
+input[type="text"], input[type="password"], textarea {
+	padding: 0; 				/* убираем внутренние отступы для текстовых полей */
+}
+input[type="checkbox"] { 		/* вертикальное выравнивание чекбоксов и радиобатонов относительно меток */
+	vertical-align: bottom;
+}
+input[type="radio"] {
+	vertical-align: text-bottom;
+}
+sub {
+	vertical-align: sub;
+	font-size: smaller;
+}
+sup {
+	vertical-align: super;
+	font-size: smaller;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display:block;
+}
+nav ul {
+	 list-style:none;
+}
+/* --------------- /reset.css --------------- */
+
+/* --------------- базовые настройки ---------*/
+html {
+	min-height:100%; /* всегда показываем вертикальную полосу прокрутки  */
+}
+body {
+	color: #000;
+	text-align: left;
+	font-size: 1em; /* используем безопасные шрифтовые CSS стеки */
+	min-height:100%;
+}
+a, a:visited { /* порядок правил для ссылок имеет значение */
+	color: #f33b45;
+}
+a:hover {
+	color: #f33b45;
+	text-decoration:none;
+}
+a:focus, a:active {
+	color: #f33b45;
+}
+h1, h2, h3, h4, h5, h6{
+	font-weight:normal;
+}
+img{
+
+	max-width:100%;
+}
+.clr{
+	clear:both;
+}
+.clearfix:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+/* --------------- /базовые настройки ---------*/
+
+body{
+	font-family: 'Open Sans', Arial, sans-serif;
+}
+header.centered{
+	    padding: 35px 20px 20px 20px; margin-bottom:30px;
+}
+header h1{
+	text-align:center; margin-bottom:15px; font-size:2.25em; color:#fff;
+}
+header.centered h2{
+	text-align:center; margin-bottom:30px; font-size:1.5em; color:#fff;
+}
+.buttonhead{
+	border:2px solid #f33b45; display:table; margin:0 auto; padding: 10px 30px; font-size: 1.25em; text-decoration: none;
+}
+
+.buttonhead:hover{
+	border:2px solid #f33b45; color:#fff; background:#f33b45;
+}
+.centered{
+	max-width:980px; margin:0 auto; padding: 0 20px; box-sizing: border-box;
+}
+	.centered h2{
+		text-align:center; margin-bottom:30px; font-size:2.25em; font-weight:300;
+	}
+.headwrapper{
+	background:url(images/hero-bg.jpg) center top;
+}
+p{
+	margin-bottom:25px;
+}
+.list-single{
+	list-style-image:url(images/ch.jpg); margin: 0 0 25px 40px;
+}
+.list-single li{
+	line-height:1.7;
+}
+.zaglev3{
+	font-size:1.5em; margin-bottom:25px;
+}
+.botist{
+	list-style:none;
+}
+.botist li{
+	margin-bottom:15px;
+}
+.botist li span{
+	font-weight:bold;
+}
+
+.slideblock div, .slideblock2 div{
+	padding:0 1%; box-sizing:border-box; text-align:center;
+}
+.slideblock div i, .slideblock2 div i{
+	font-size:3em; margin-bottom:30px; display:block;
+}
+.slideblock div h3, .slideblock2 div h3{
+	margin-bottom:20px; font-weight:600;
+}
+.slideblock div p, .slideblock2 div p{
+	font-size:0.9375em;
+}
+
+.block5{
+}
+.block5 div{
+	float:left; width:33.33333%; text-align:center; margin:0 0 30px 0; padding:0 2%; box-sizing:border-box;
+}
+.block5 div i{
+	font-size:3em; margin-bottom:30px; display:block;
+}
+.block5 div:nth-child(3n+1){
+	clear:left;
+}
+.block5 div h3{
+	margin-bottom:20px; font-weight:600;
+}
+.block5 div p{
+	font-size:0.9375em;
+}
+
+.block-text h2 span{
+	display:block; font-size:0.87em;
+}
+.block-text h2 i:first-letter{
+	color:#ff0000;
+}
+
+.block3{
+	margin-bottom: 30px;
+}
+.block3 div{
+	float:left; width:33.333%; text-align:center; padding:0 2%; box-sizing:border-box;
+}
+.block3 div img{
+	margin-bottom:20px;
+}
+.block3 div h3{
+	margin-bottom:20px; font-weight:600; font-size:1.125em;
+}
+.block-clients>div{
+	margin:0 0 30px 0; border-bottom:1px solid #999; padding-bottom:20px;
+}
+.block-clients>div:last-child{
+	border-bottom:none; margin-bottom: 0; padding-bottom: 0;
+}
+.imgleft{
+	float:left; width:35%; box-sizing:border-box; padding:0 2% 0 0;
+}
+.text-right{
+	float:right; width:65%;
+}
+.imgright{
+	float:right; width:35%; box-sizing:border-box; padding:0 0 0 2%;
+}
+.text-left{
+	float:left; width:65%;
+}
+.block5line{
+	margin-bottom:30px;
+}
+.block5line div{
+	float:left; width:20%; padding:0 1%; text-align:center; box-sizing:border-box;
+}
+.block5line div img{
+	margin-bottom:20px;
+}
+
+a.buttontxt{
+	border:2px solid #f33b45; color:#fff; background:#f33b45; display:table; margin:0 auto; padding: 10px 30px; font-size: 1.25em; text-decoration: none;
+}
+
+a.buttontxt:hover{
+	text-decoration:none; background:#f5111e;
+}
+.graybg{
+	background:#f9f9f9; padding:30px 0;
+}
+.graybg2{
+	background:#115884; padding:30px 0; margin-bottom:30px; color:#fff;
+}
+.graybg3{
+	background:#115884; padding:30px 0; color:#fff;
+}
+
+.graybgfoot{
+	background:#f9f9f9; padding:30px 0;
+}
+footer{
+	color:#999999; font-size:0.75em;
+}
+footer p{
+	margin:0;
+}
+.info{
+	border-left:2px solid #f33b45; padding:10px 10px 10px 20px;
+}
+.block-btn{
+	margin-bottom:30px;
+}
+
+.txtinpt {
+    border: 0 none;
+    display: block;
+    font-size: 0.875em;
+    margin: 0 auto 10px;
+    padding: 10px 26px !important;
+    width: 250px;
+	border:1px solid #eee;
+	-webkit-appearance: none;
+}
+.btninpt {
+    border:2px solid #f33b45; color:#fff; background:#f33b45; display:table; margin:0 auto; padding: 10px 28px; font-size: 1.25em; text-decoration: none; cursor:pointer;
+}
+	
+.btninpt:hover{
+	text-decoration:none; background:#f5111e;
+}
+
+@media screen and (max-width:800px){
+	.block5line div{
+		float:left; width:33.3333%; padding:0 1%; text-align:center; box-sizing:border-box;
+	}
+	.block5line div img{
+		margin-bottom:20px;
+	}
+	.block5line div:nth-child(4){
+		clear:left; margin-left:16%;
+	}
+}
+
+@media screen and (max-width:600px){
+	.block3 div{
+		float:none; width:50%; margin:0 auto 50px auto;
+	}
+	.block3 div img{
+		margin-bottom:10px;
+	}
+	
+	.block5line div{
+		width:50%; padding:0 1%; text-align:center; box-sizing:border-box;
+	}
+	.block5line div img{
+		margin-bottom:20px;
+	}
+	.block5line div:nth-child(4){
+		clear:none; margin-left:0;
+	}
+	.block5line div:nth-child(2n+1){
+		clear:left;
+	}
+}
+
+@media screen and (max-width:513px){
+	.block5line div{
+		width:100%; padding:0 1%; text-align:center; box-sizing:border-box;
+	}
+	.imgleft{
+		float:none; width:100%; text-align:center; box-sizing:border-box; padding:0 2% 0 0;  margin-bottom:20px;
+	}
+
+	.text-right{
+		float:none; width:100%;
+	}
+	.imgright{
+		float:none; width:100%; box-sizing:border-box; padding:0 0 0 2%; text-align:center; margin-bottom:20px;
+	}
+	.text-left{
+		float:none; width:100%;
+	}
+	
+	.txtinpt {
+		box-sizing:border-box;
+	}
+}
