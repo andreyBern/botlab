@@ -32,7 +32,7 @@ $email = trim($email);
 if (mail("ab@webformyself.com", "Заявка с сайта", "Имя:".$name.". E-mail: ".$email ,"From: info@botlab.info \r\n"))
 {     echo "Сообщение успешно отправлено!";
 } else {
-    echo "при отправке сообщения возникли ошибки";
+    echo "при отправке сообщения возникли ошибки. ЛОШАРА ТЫ";
 }
 ?>
 
